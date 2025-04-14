@@ -15,12 +15,16 @@ using namespace std;
 
 int main()
 {
+    setlocale(LC_ALL, "RU");
+
     Math calculator;
 
-    int num1, num2;
+    int num1 = 0, num2 = 0;
 
-    cout << "¬ведите первое число: " << num1 << endl;
-    cout << "¬ведите первое число: " << num2 << endl;
+    cout << "¬ведите первое число: " << endl;
+    cin >> num1;
+    cout << "¬ведите второе число: " << endl;
+    cin >> num2;
 
     // »спользуем методы класса Math
     int sum = calculator.add(num1, num2);

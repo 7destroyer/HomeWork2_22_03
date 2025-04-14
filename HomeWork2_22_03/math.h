@@ -2,6 +2,7 @@
 #define MATH_H
 
 class Math {
+public:
 	inline int add(int a, int b) {
 		return a + b;
 	}
